@@ -5,28 +5,92 @@
   --default-font-family: "Poppins", san-serif;
 }
 
-
 body {
   font-family: var(--default-font-family);
+  background: rgb(75, 120, 139);
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font-family);
-  font-weight: bold;
-  color: #2a333a;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(233, 238, 241);
+  text-align: center;
+  padding: 200px 0;
 }
 
-h1 {
-  font-family: var(--heading-font-family);
-  font-style: normal;
+header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.5;
+  color: #79b3dd;
+  font-family: var(--heading-font-family);
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  
   text-align: center;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: rgb(197, 220, 236);
+  text-decoration: none;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
 }
