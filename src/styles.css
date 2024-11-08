@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -25,17 +29,58 @@ body {
   margin-right: 40px;
 }
 
-.grid-3-colums {
+.grid-3-colums-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-colums {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-responsive {
+  max-width: 50%;
+  display: block;
+
+}
+
+.card {
+  background-color: #d6ebf3;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 20px 20px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #38758d;
+  text-decoration: none;
+}
 
 section {
   max-width: 100%;
+  padding: 20px;
 }
 
-.img { 
-  margin-left: 40px;
+section.secondary {
+  background: #cde0e9;
+}
+
+.img {
+  margin-left: 30px;
   max-width: 100%;
 }
 
@@ -93,6 +138,8 @@ main {
   padding: 70px 0;
 }
 
+
+
 main h2 {
   font-weight: 700;
   font-size: 16px;
@@ -108,6 +155,22 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
+  color: #38758d;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #38758d;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
   color: #38758d;
   margin: 0;
 }
@@ -181,7 +244,6 @@ footer h3 {
 
   section {
     padding: 30px 0;
-
   }
 
   .card-header img {
@@ -191,5 +253,4 @@ footer h3 {
   .embed {
     aspect-ratio: 16 / 9;
   }
-
 }
