@@ -258,6 +258,10 @@ footer h3 {
     font-size: 12px;
   }
 
+  .img {
+    display: none;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
